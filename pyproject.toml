@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ping-service"
+version = "0.1.0"
+description = "When life pings you, will you pong?"
+authors = ["Patrick White <whitep@alumni.vcu.edu>"]
+readme = "README.md"
+packages = [{include = "ping_service"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pre-commit = "^4.2.0"
+structlog = "^25.4.0"
+pytest = "^8.4.1"
+scapy = "^2.6.1"
+icmplib = "^3.0.4"
+influxdb = "^5.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
